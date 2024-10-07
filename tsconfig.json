@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,   // Включаем строгую проверку на null
+    "noImplicitAny": true,      // Включаем запрет неявных any
+    "strictBindCallApply": true, // Включаем строгие проверки для bind, call, apply
+    "forceConsistentCasingInFileNames": true, // Включаем проверку регистра в именах файлов
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots": ["./node_modules/@types", "./src/@types"]
+  },
+  "include": ["src/**/*.ts", "src/types/**/*.d.ts"]
+}
